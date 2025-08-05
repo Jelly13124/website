@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>登录</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light">
+
+  <main class="center" style="flex-direction:column; margin-top:4rem;">
+    <div class="auth-box">
+      <h2>用户登录</h2>
+
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="用户名或邮箱" required />
+        <input type="password" id="loginPassword" placeholder="密码" required />
+        <button type="submit" class="btn btn--plain" style="margin-top: 1em;">登录</button>
+      </form>
+
+      <p style="margin-top:1rem;">
+        没有账号？<a class="link" href="signup.html">立即注册</a>
+      </p>
+      <p style="margin-top:0.5rem;">
+        忘记密码？<a class="link" href="recover.html">点击找回</a>
+      </p>
+
+      <p id="loginMsg" style="color:red; margin-top:1rem;"></p>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

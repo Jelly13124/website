@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>找回密码</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light" id="top">
+
+  <main class="section">
+    <h1 class="section__title">找回密码</h1>
+
+    <section class="project" style="max-width: 500px; margin: auto; padding: 2rem;">
+      <form id="recoverForm" style="display: flex; flex-direction: column; gap: 1em;">
+        <label for="recoverEmail" style="text-align: left;">请输入注册邮箱：</label>
+        <input type="email" id="recoverEmail" placeholder="example@email.com" required class="btn btn--plain" style="width: 100%;" />
+        
+        <button type="submit" class="btn btn--outline">发送重置链接</button>
+        <p id="recoverMsg" style="color:red;"></p>
+      </form>
+    </section>
+
+    <p style="text-align:center; margin-top: 2rem;">
+      <a class="link" href="index.html">返回登录</a>
+    </p>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
